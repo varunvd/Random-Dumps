@@ -1,0 +1,19 @@
+Script started on Tuesday 19 July 2016 10:26:42 PM IST
+Python 2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import json
+>>> import csv
+>>> f = open('tryit.csv', 'r')
+>>> f.close()
+>>> with open('tryit.csv' ,'r') as f:
+...     data = json.dumps( [ row for row in csv.reader(f) ] )
+...     print data
+... 
+[["varun", "deshpande"], ["123", "345"]]
+>>> vvv = json.loads(data)
+>>> vvv
+[[u'varun', u'deshpande'], [u'123', u'345']]
+>>> exit()
+
+Script done on Tuesday 19 July 2016 10:27:24 PM IST
