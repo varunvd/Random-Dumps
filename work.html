@@ -1,0 +1,41 @@
+<html>
+<meta charset="utf-8">
+<body>
+<script src="./d3.v3.min.js"></script>
+<script src="./topojson.v1.min.js"></script>
+<script type="text/javascript" src="./check_it.js"></script>
+<h1>World Map</h1>
+<div id="container" style="position: relative; width: 1000px; height: 700px;"></div>
+<script>
+working_on()
+function working_on(){
+    d3.csv("checking.csv", function(error, csvdata1){
+      for(var i=0; i<csvdata1.length; i++)
+      {
+        csvdata1[i].visualizedMeasure = csvdata1[i].imr20052010;
+        console.log(csvdata1[i]);
+      }
+      for(var i=0; i<csvdata1.length; i++)
+      {
+        csvdata1[csvdata1[i].ISO]=csvdata1[i];
+        console.log(csvdata1[i].ISO);
+        delete csvdata1[i].ISO;
+        console.log(csvdata1[i].ISO);
+        delete csvdata1[i];
+      }
+      map.updateChoropleth(csvdata1);
+    });
+}
+    var map = new Datamap({
+      element: document.getElementById('container'),
+      scope : 'world',
+      projection : 'equirectangular',
+    geographyConfig : {
+        popupTemplate : function(geography, csvdata1){
+          return '<div class="hoverinfo">' + geography.properties.name + '</br>' + 'Infant Mortality Rate = ' + csvdata1.visualizedMeasure + '(per 1000 live births'
+        }
+      }
+    });
+</script>
+</body>
+</html>
