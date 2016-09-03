@@ -1,0 +1,27 @@
+Script started on Tuesday 19 July 2016 10:09:55 PM IST
+Python 2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import csv
+>>> import json
+>>> f = open('tryit.csv', 'r')
+>>> reader = csv.DictReader(f)
+>>> out = json.dumps( [ row for row in reader ] )
+>>> print out
+[{"deshpande": "345", "varun": "123"}]
+>>>f.close()
+>>> exit()
+
+#https://ntare16.wordpress.com/2012/01/26/python-code-to-convert-csv-to-json
+
+'''
+	import csv
+	f = open('name.csv', 'w')
+	ff = csv.writer(f)
+	a = [ 'hello' ,'why' ]
+	ff.writerow(a)
+	f.close()
+	This is used to create a csv file
+'''
+Script done on Tuesday 19 July 2016 10:11:25 PM IST
+
