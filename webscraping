@@ -1,0 +1,469 @@
+Script started on Saturday 27 August 2016 09:57:02 AM IST
+Python 2.7.10 (default, Oct 14 2015, 16:09:02) 
+[GCC 5.2.1 20151010] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> improt [K[K[K[Kort json
+>>> impr[Kort csv
+>>> f = open('ats,[K.cv[Ksv', 'r')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IOError: [Errno 2] No such file or directory: 'ats.csv'
+>>> import os
+>>> os.chdir('/home/deh[Kshpande/GITHUB_TESI[KTING')
+>>> os.chdr[Kir(',[K./w       [Kebscraip[K[Kping')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+OSError: [Errno 2] No such file or directory: './webscraping'
+>>> os.chdir('./webscraping')/home/deshpande/GITHUB_TESTING')
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17P./webscraping')_')p')y')t')h')o')n')
+>>> f = open('ats.csv', 'r')
+>>> ff = csv.DictTreade[K[K[K[K[K[KReader(f)
+>>> out = json.dumps( [ row for row in ff ] )
+>>> out
+'[{"null": ["5-5"], "RS": "34-28", "L10": "L2", "L": "71", "PCT": "56", "STRK": "+91", "GB": ".559", "W": "Toronto Blue Jays", "DIFF": "517", "HOME": "-", "East": "0", "ROAD": "37-28", "RA": "608"}, {"null": ["6-4"], "RS": "33-29", "L10": "L2", "L": "71", "PCT": "56", "STRK": "+119", "GB": ".559", "W": "Boston Red Sox", "DIFF": "570", "HOME": "-", "East": "1", "ROAD": "38-27", "RA": "689"}, {"null": ["4-6"], "RS": "28-35", "L10": "L1", "L": "70", "PCT": "57", "STRK": "+24", "GB": ".551", "W": "Baltimore Orioles", "DIFF": "577", "HOME": "1", "East": "2", "ROAD": "42-22", "RA": "601"}, {"null": ["5-5"], "RS": "30-34", "L10": "W2", "L": "65", "PCT": "61", "STRK": "-22", "GB": ".516", "W": "New York Yankees", "DIFF": "547", "HOME": "5.5", "East": "3", "ROAD": "35-27", "RA": "525"}, {"null": ["7-3"], "RS": "22-35", "L10": "W2", "L": "54", "PCT": "72", "STRK": "-17", "GB": ".429", "W": "Tampa Bay Rays", "DIFF": "542", "HOME": "16.5", "East": "4", "ROAD": "32-37", "RA": "525"}, {"null": ["5-5"], "RS": "33-31", "L10": "L3", "L": "72", "PCT": "54", "STRK": "+85", "GB": ".571", "W": "Cleveland Indians", "DIFF": "534", "HOME": "-", "East": "5", "ROAD": "39-23", "RA": "619"}, {"null": ["5-5"], "RS": "33-33", "L10": "W4", "L": "68", "PCT": "59", "STRK": "+22", "GB": ".535", "W": "Detroit Tigers", "DIFF": "574", "HOME": "4.5", "East": "6", "ROAD": "35-26", "RA": "596"}, {"null": ["9-1"], "RS": "26-40", "L10": "W1", "L": "66", "PCT": "61", "STRK": "-22", "GB": ".520", "W": "Kansas City Royals", "DIFF": "523", "HOME": "6.5", "East": "7", "ROAD": "40-21", "RA": "501"}, {"null": ["5-5"], "RS": "28-37", "L10": "W1", "L": "61", "PCT": "65", "STRK": "-38", "GB": ".484", "W": "Chicago White Sox", "DIFF": "550", "HOME": "11", "East": "8", "ROAD": "33-28", "RA": "512"}, {"null": ["2-8"], "RS": "24-38", "L10": "L7", "L": "49", "PCT": "78", "STRK": "-112", "GB": ".386", "W": "Minnesota Twins", "DIFF": "686", "HOME": "23.5", "East": "9", "ROAD": "25-40", "RA": "574"}, {"null": ["6-4"], "RS": "35-33", "L10": "W2", "L": "75", "PCT": "53", "STRK": "+8", "GB": ".586", "W": "Texas Rangers", "DIFF": "589", "HOME": "-", "East": "10", "ROAD": "40-20", "RA": "597"}, {"null": ["4-6"], "RS": "31-32", "L10": "L3", "L": "67", "PCT": "60", "STRK": "+43", "GB": ".528", "W": "Seattle Mariners", "DIFF": "550", "HOME": "7.5", "East": "11", "ROAD": "36-28", "RA": "593"}, {"null": ["5-5"], "RS": "32-33", "L10": "W1", "L": "66", "PCT": "61", "STRK": "+43", "GB": ".520", "W": "Houston Astros", "DIFF": "535", "HOME": "8.5", "East": "12", "ROAD": "34-28", "RA": "578"}, {"null": ["3-7"], "RS": "25-36", "L10": "W2", "L": "55", "PCT": "72", "STRK": "-90", "GB": ".433", "W": "Oakland Athletics", "DIFF": "599", "HOME": "19.5", "East": "13", "ROAD": "30-36", "RA": "509"}, {"null": ["5-5"], "RS": "25-40", "L10": "W2", "L": "54", "PCT": "73", "STRK": "-39", "GB": ".425", "W": "Los Angeles Angels", "DIFF": "605", "HOME": "20.5", "East": "14", "ROAD": "29-33", "RA": "566"}, {"null": ["4-6"], "RS": "37-29", "L10": "W1", "L": "74", "PCT": "53", "STRK": "+139", "GB": ".583", "W": "Washington Nationals", "DIFF": "477", "HOME": "-", "East": "15", "ROAD": "37-24", "RA": "616"}, {"null": ["5-5"], "RS": "34-31", "L10": "L1", "L": "66", "PCT": "61", "STRK": "+13", "GB": ".520", "W": "Miami Marlins", "DIFF": "520", "HOME": "8", "East": "16", "ROAD": "32-30", "RA": "533"}, {"null": ["5-5"], "RS": "33-33", "L10": "W1", "L": "64", "PCT": "63", "STRK": "-10", "GB": ".504", "W": "New York Mets", "DIFF": "497", "HOME": "10", "East": "17", "ROAD": "31-30", "RA": "487"}, {"null": ["5-5"], "RS": "29-35", "L10": "W1", "L": "59", "PCT": "68", "STRK": "-126", "GB": ".465", "W": "Philadelphia Phillies", "DIFF": "605", "HOME": "15", "East": "18", "ROAD": "30-33", "RA": "479"}, {"null": ["3-7"], "RS": "28-37", "L10": "W1", "L": "47", "PCT": "81", "STRK": "-150", "GB": ".367", "W": "Atlanta Braves", "DIFF": "628", "HOME": "27.5", "East": "19", "ROAD": "19-44", "RA": "478"}, {"null": ["8-2"], "RS": "36-26", "L10": "W3", "L": "81", "PCT": "45", "STRK": "+217", "GB": ".643", "W": "Chicago Cubs", "DIFF": "430", "HOME": "-", "East": "20", "ROAD": "45-19", "RA": "647"}, {"null": ["7-3"], "RS": "38-24", "L10": "L1", "L": "67", "PCT": "59", "STRK": "+81", "GB": ".532", "W": "St. Louis Cardinals", "DIFF": "551", "HOME": "14", "East": "21", "ROAD": "29-35", "RA": "632"}, {"null": ["5-5"], "RS": "30-31", "L10": "W1", "L": "64", "PCT": "61", "STRK": "+6", "GB": ".512", "W": "Pittsburgh Pirates", "DIFF": "558", "HOME": "16.5", "East": "22", "ROAD": "34-30", "RA": "564"}, {"null": ["4-6"], "RS": "20-41", "L10": "L1", "L": "56", "PCT": "71", "STRK": "-77", "GB": ".441", "W": "Milwaukee Brewers", "DIFF": "600", "HOME": "25.5", "East": "23", "ROAD": "36-30", "RA": "523"}, {"null": ["6-4"], "RS": "22-39", "L10": "L1", "L": "54", "PCT": "72", "STRK": "-114", "GB": ".429", "W": "Cincinnati Reds", "DIFF": "679", "HOME": "27", "East": "24", "ROAD": "32-33", "RA": "565"}, {"null": ["6-4"], "RS": "31-31", "L10": "L1", "L": "71", "PCT": "56", "STRK": "+69", "GB": ".559", "W": "Los Angeles Dodgers", "DIFF": "508", "HOME": "-", "East": "25", "ROAD": "40-25", "RA": "577"}, {"null": ["3-7"], "RS": "34-30", "L10": "W1", "L": "69", "PCT": "58", "STRK": "+48", "GB": ".543", "W": "San Francisco Giants", "DIFF": "517", "HOME": "2", "East": "26", "ROAD": "35-28", "RA": "565"}, {"null": ["4-6"], "RS": "28-36", "L10": "L3", "L": "60", "PCT": "67", "STRK": "+8", "GB": ".472", "W": "Colorado Rockies", "DIFF": "659", "HOME": "11", "East": "27", "ROAD": "32-31", "RA": "667"}, {"null": ["3-7"], "RS": "23-40", "L10": "L3", "L": "53", "PCT": "74", "STRK": "-67", "GB": ".417", "W": "San Diego Padres", "DIFF": "618", "HOME": "18", "East": "28", "ROAD": "30-34", "RA": "551"}, {"null": ["4-6"], "RS": "30-33", "L10": "L1", "L": "53", "PCT": "75", "STRK": "-132", "GB": ".414", "W": "Arizona Diamondbacks", "DIFF": "717", "HOME": "18.5", "East": "29", "ROAD": "23-42", "RA": "585"}]'
+>>> dict = {}
+>>> out[0]['W']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: string indices must be integers, not str
+>>> out[0]
+'['
+>>> out = so[K[Kjson.loads(out)
+>>> out[0]['W']
+u'Toronto Blue Jays'
+>>> names=[[K{}
+>>> for i in range(0,len(out)):
+...     names[out[i]['W''[K]] = out[i]['STRK']
+... 
+>>> names
+{u'Baltimore Orioles': u'+24', u'Los Angeles Dodgers': u'+69', u'Washington Nationals': u'+139', u'Arizona Diamondbacks': u'-132', u'Texas Rangers': u'+8', u'San Diego Padres': u'-67', u'Tampa Bay Rays': u'-17', u'Toronto Blue Jays': u'+91', u'Chicago Cubs': u'+217', u'Colorado Rockies': u'+8', u'Houston Astros': u'+43', u'Boston Red Sox': u'+119', u'Milwaukee Brewers': u'-77', u'Cleveland Indians': u'+85', u'Kansas City Royals': u'-22', u'St. Louis Cardinals': u'+81', u'Chicago White Sox': u'-38', u'Seattle Mariners': u'+43', u'Philadelphia Phillies': u'-126', u'New York Mets': u'-10', u'Atlanta Braves': u'-150', u'Oakland Athletics': u'-90', u'San Francisco Giants': u'+48', u'New York Yankees': u'-22', u'Miami Marlins': u'+13', u'Detroit Tigers': u'+22', u'Pittsburgh Pirates': u'+6', u'Minnesota Twins': u'-112', u'Cincinnati Reds': u'-114', u'Los Angeles Angels': u'-39'}
+>>> for i in ra[K[Kout:
+...     print i
+... 
+{u'East': u'0', u'RS': u'34-28', u'L10': u'L2', u'L': u'71', u'PCT': u'56', u'STRK': u'+91', u'GB': u'.559', u'W': u'Toronto Blue Jays', u'HOME': u'-', u'DIFF': u'517', u'null': [u'5-5'], u'ROAD': u'37-28', u'RA': u'608'}
+{u'East': u'1', u'RS': u'33-29', u'L10': u'L2', u'L': u'71', u'PCT': u'56', u'STRK': u'+119', u'GB': u'.559', u'W': u'Boston Red Sox', u'HOME': u'-', u'DIFF': u'570', u'null': [u'6-4'], u'ROAD': u'38-27', u'RA': u'689'}
+{u'East': u'2', u'RS': u'28-35', u'L10': u'L1', u'L': u'70', u'PCT': u'57', u'STRK': u'+24', u'GB': u'.551', u'W': u'Baltimore Orioles', u'HOME': u'1', u'DIFF': u'577', u'null': [u'4-6'], u'ROAD': u'42-22', u'RA': u'601'}
+{u'East': u'3', u'RS': u'30-34', u'L10': u'W2', u'L': u'65', u'PCT': u'61', u'STRK': u'-22', u'GB': u'.516', u'W': u'New York Yankees', u'HOME': u'5.5', u'DIFF': u'547', u'null': [u'5-5'], u'ROAD': u'35-27', u'RA': u'525'}
+{u'East': u'4', u'RS': u'22-35', u'L10': u'W2', u'L': u'54', u'PCT': u'72', u'STRK': u'-17', u'GB': u'.429', u'W': u'Tampa Bay Rays', u'HOME': u'16.5', u'DIFF': u'542', u'null': [u'7-3'], u'ROAD': u'32-37', u'RA': u'525'}
+{u'East': u'5', u'RS': u'33-31', u'L10': u'L3', u'L': u'72', u'PCT': u'54', u'STRK': u'+85', u'GB': u'.571', u'W': u'Cleveland Indians', u'HOME': u'-', u'DIFF': u'534', u'null': [u'5-5'], u'ROAD': u'39-23', u'RA': u'619'}
+{u'East': u'6', u'RS': u'33-33', u'L10': u'W4', u'L': u'68', u'PCT': u'59', u'STRK': u'+22', u'GB': u'.535', u'W': u'Detroit Tigers', u'HOME': u'4.5', u'DIFF': u'574', u'null': [u'5-5'], u'ROAD': u'35-26', u'RA': u'596'}
+{u'East': u'7', u'RS': u'26-40', u'L10': u'W1', u'L': u'66', u'PCT': u'61', u'STRK': u'-22', u'GB': u'.520', u'W': u'Kansas City Royals', u'HOME': u'6.5', u'DIFF': u'523', u'null': [u'9-1'], u'ROAD': u'40-21', u'RA': u'501'}
+{u'East': u'8', u'RS': u'28-37', u'L10': u'W1', u'L': u'61', u'PCT': u'65', u'STRK': u'-38', u'GB': u'.484', u'W': u'Chicago White Sox', u'HOME': u'11', u'DIFF': u'550', u'null': [u'5-5'], u'ROAD': u'33-28', u'RA': u'512'}
+{u'East': u'9', u'RS': u'24-38', u'L10': u'L7', u'L': u'49', u'PCT': u'78', u'STRK': u'-112', u'GB': u'.386', u'W': u'Minnesota Twins', u'HOME': u'23.5', u'DIFF': u'686', u'null': [u'2-8'], u'ROAD': u'25-40', u'RA': u'574'}
+{u'East': u'10', u'RS': u'35-33', u'L10': u'W2', u'L': u'75', u'PCT': u'53', u'STRK': u'+8', u'GB': u'.586', u'W': u'Texas Rangers', u'HOME': u'-', u'DIFF': u'589', u'null': [u'6-4'], u'ROAD': u'40-20', u'RA': u'597'}
+{u'East': u'11', u'RS': u'31-32', u'L10': u'L3', u'L': u'67', u'PCT': u'60', u'STRK': u'+43', u'GB': u'.528', u'W': u'Seattle Mariners', u'HOME': u'7.5', u'DIFF': u'550', u'null': [u'4-6'], u'ROAD': u'36-28', u'RA': u'593'}
+{u'East': u'12', u'RS': u'32-33', u'L10': u'W1', u'L': u'66', u'PCT': u'61', u'STRK': u'+43', u'GB': u'.520', u'W': u'Houston Astros', u'HOME': u'8.5', u'DIFF': u'535', u'null': [u'5-5'], u'ROAD': u'34-28', u'RA': u'578'}
+{u'East': u'13', u'RS': u'25-36', u'L10': u'W2', u'L': u'55', u'PCT': u'72', u'STRK': u'-90', u'GB': u'.433', u'W': u'Oakland Athletics', u'HOME': u'19.5', u'DIFF': u'599', u'null': [u'3-7'], u'ROAD': u'30-36', u'RA': u'509'}
+{u'East': u'14', u'RS': u'25-40', u'L10': u'W2', u'L': u'54', u'PCT': u'73', u'STRK': u'-39', u'GB': u'.425', u'W': u'Los Angeles Angels', u'HOME': u'20.5', u'DIFF': u'605', u'null': [u'5-5'], u'ROAD': u'29-33', u'RA': u'566'}
+{u'East': u'15', u'RS': u'37-29', u'L10': u'W1', u'L': u'74', u'PCT': u'53', u'STRK': u'+139', u'GB': u'.583', u'W': u'Washington Nationals', u'HOME': u'-', u'DIFF': u'477', u'null': [u'4-6'], u'ROAD': u'37-24', u'RA': u'616'}
+{u'East': u'16', u'RS': u'34-31', u'L10': u'L1', u'L': u'66', u'PCT': u'61', u'STRK': u'+13', u'GB': u'.520', u'W': u'Miami Marlins', u'HOME': u'8', u'DIFF': u'520', u'null': [u'5-5'], u'ROAD': u'32-30', u'RA': u'533'}
+{u'East': u'17', u'RS': u'33-33', u'L10': u'W1', u'L': u'64', u'PCT': u'63', u'STRK': u'-10', u'GB': u'.504', u'W': u'New York Mets', u'HOME': u'10', u'DIFF': u'497', u'null': [u'5-5'], u'ROAD': u'31-30', u'RA': u'487'}
+{u'East': u'18', u'RS': u'29-35', u'L10': u'W1', u'L': u'59', u'PCT': u'68', u'STRK': u'-126', u'GB': u'.465', u'W': u'Philadelphia Phillies', u'HOME': u'15', u'DIFF': u'605', u'null': [u'5-5'], u'ROAD': u'30-33', u'RA': u'479'}
+{u'East': u'19', u'RS': u'28-37', u'L10': u'W1', u'L': u'47', u'PCT': u'81', u'STRK': u'-150', u'GB': u'.367', u'W': u'Atlanta Braves', u'HOME': u'27.5', u'DIFF': u'628', u'null': [u'3-7'], u'ROAD': u'19-44', u'RA': u'478'}
+{u'East': u'20', u'RS': u'36-26', u'L10': u'W3', u'L': u'81', u'PCT': u'45', u'STRK': u'+217', u'GB': u'.643', u'W': u'Chicago Cubs', u'HOME': u'-', u'DIFF': u'430', u'null': [u'8-2'], u'ROAD': u'45-19', u'RA': u'647'}
+{u'East': u'21', u'RS': u'38-24', u'L10': u'L1', u'L': u'67', u'PCT': u'59', u'STRK': u'+81', u'GB': u'.532', u'W': u'St. Louis Cardinals', u'HOME': u'14', u'DIFF': u'551', u'null': [u'7-3'], u'ROAD': u'29-35', u'RA': u'632'}
+{u'East': u'22', u'RS': u'30-31', u'L10': u'W1', u'L': u'64', u'PCT': u'61', u'STRK': u'+6', u'GB': u'.512', u'W': u'Pittsburgh Pirates', u'HOME': u'16.5', u'DIFF': u'558', u'null': [u'5-5'], u'ROAD': u'34-30', u'RA': u'564'}
+{u'East': u'23', u'RS': u'20-41', u'L10': u'L1', u'L': u'56', u'PCT': u'71', u'STRK': u'-77', u'GB': u'.441', u'W': u'Milwaukee Brewers', u'HOME': u'25.5', u'DIFF': u'600', u'null': [u'4-6'], u'ROAD': u'36-30', u'RA': u'523'}
+{u'East': u'24', u'RS': u'22-39', u'L10': u'L1', u'L': u'54', u'PCT': u'72', u'STRK': u'-114', u'GB': u'.429', u'W': u'Cincinnati Reds', u'HOME': u'27', u'DIFF': u'679', u'null': [u'6-4'], u'ROAD': u'32-33', u'RA': u'565'}
+{u'East': u'25', u'RS': u'31-31', u'L10': u'L1', u'L': u'71', u'PCT': u'56', u'STRK': u'+69', u'GB': u'.559', u'W': u'Los Angeles Dodgers', u'HOME': u'-', u'DIFF': u'508', u'null': [u'6-4'], u'ROAD': u'40-25', u'RA': u'577'}
+{u'East': u'26', u'RS': u'34-30', u'L10': u'W1', u'L': u'69', u'PCT': u'58', u'STRK': u'+48', u'GB': u'.543', u'W': u'San Francisco Giants', u'HOME': u'2', u'DIFF': u'517', u'null': [u'3-7'], u'ROAD': u'35-28', u'RA': u'565'}
+{u'East': u'27', u'RS': u'28-36', u'L10': u'L3', u'L': u'60', u'PCT': u'67', u'STRK': u'+8', u'GB': u'.472', u'W': u'Colorado Rockies', u'HOME': u'11', u'DIFF': u'659', u'null': [u'4-6'], u'ROAD': u'32-31', u'RA': u'667'}
+{u'East': u'28', u'RS': u'23-40', u'L10': u'L3', u'L': u'53', u'PCT': u'74', u'STRK': u'-67', u'GB': u'.417', u'W': u'San Diego Padres', u'HOME': u'18', u'DIFF': u'618', u'null': [u'3-7'], u'ROAD': u'30-34', u'RA': u'551'}
+{u'East': u'29', u'RS': u'30-33', u'L10': u'L1', u'L': u'53', u'PCT': u'75', u'STRK': u'-132', u'GB': u'.414', u'W': u'Arizona Diamondbacks', u'HOME': u'18.5', u'DIFF': u'717', u'null': [u'4-6'], u'ROAD': u'23-42', u'RA': u'585'}
+>>> for i in out:
+...     o[Kfr[Kor j in i:
+...             print j
+... 
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+East
+RS
+L10
+L
+PCT
+STRK
+GB
+W
+HOME
+DIFF
+null
+ROAD
+RA
+>>> exit()
+
+Script done on Saturday 27 August 2016 10:03:27 AM IST
